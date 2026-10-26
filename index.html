@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shobika Ravikumar | Generative AI Content Creator</title>
+  <meta name="description" content="Portfolio of Shobika Ravikumar, a Generative AI Content Creator and AI-Assisted Learning Designer based in Coimbatore, India." />
+  <style>
+    :root {
+      --bg: #0b1020;
+      --card: #131a30;
+      --text: #eef2ff;
+      --muted: #a8b3cf;
+      --accent: #7c5cff;
+      --accent2: #22d3ee;
+      --border: rgba(255,255,255,.12);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { max-width: 1080px; margin: auto; padding: 0 20px; }
+    header {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(11,16,32,.9);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 16px 0;
+    }
+    .logo { font-weight: 700; letter-spacing: .5px; }
+    .logo span { color: var(--accent2); }
+    nav ul { display: flex; gap: 22px; list-style: none; }
+    nav a { color: var(--muted); font-size: 15px; }
+    nav a:hover { color: var(--text); }
+    .hero {
+      padding: 90px 0 70px;
+      background:
+        radial-gradient(circle at 15% 20%, rgba(124,92,255,.25), transparent 45%),
+        radial-gradient(circle at 85% 15%, rgba(34,211,238,.18), transparent 40%);
+    }
+    .tag {
+      display: inline-block;
+      border: 1px solid var(--border);
+      padding: 6px 14px;
+      border-radius: 999px;
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+    h1 {
+      font-size: clamp(34px, 6vw, 60px);
+      line-height: 1.1;
+      margin-bottom: 18px;
+    }
+    .gradient {
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .hero p {
+      max-width: 680px;
+      color: var(--muted);
+      font-size: 18px;
+      margin-bottom: 28px;
+    }
+    .buttons { display: flex; gap: 14px; flex-wrap: wrap; }
+    .btn {
+      padding: 12px 22px;
+      border-radius: 10px;
+      font-weight: 600;
+      border: 1px solid var(--border);
+      transition: .2s;
+    }
+    .btn.primary {
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      color: #071021;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    section { padding: 70px 0; border-top: 1px solid var(--border); }
+    h2 { font-size: 32px; margin-bottom: 10px; }
+    .section-sub { color: var(--muted); max-width: 700px; margin-bottom: 34px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      transition: .2s;
+    }
+    .card:hover { transform: translateY(-4px); border-color: var(--accent); }
+    .card h3 { margin-bottom: 8px; font-size: 20px; }
+    .card p { color: var(--muted); font-size: 15px; }
+    .pill {
+      display: inline-block;
+      font-size: 12px;
+      color: var(--accent2);
+      border: 1px solid rgba(34,211,238,.35);
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+    }
+    .skills {
+      display: flex; flex-wrap: wrap; gap: 10px;
+    }
+    .skill {
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 9px 15px;
+      border-radius: 999px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 30px;
+      align-items: start;
+    }
+    .info-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+    }
+    .info-card strong { color: var(--text); }
+    .info-card p { color: var(--muted); font-size: 15px; }
+    footer {
+      padding: 34px 0;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      text-align: center;
+      font-size: 14px;
+    }
+    @media (max-width: 720px) {
+      .about-grid { grid-template-columns: 1fr; }
+      nav ul { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <div class="logo">Shobika<span>.</span></div>
+    <nav>
+      <ul>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <span class="tag">Generative AI • Visual Storytelling • Learning Content</span>
+    <h1>Hi, I’m <span class="gradient">Shobika Ravikumar</span><br />Generative AI Content Creator</h1>
+    <p>
+      I create AI-assisted visual stories, educational activity content, and structured learning
+      experiences. My work combines prompt engineering, storyboarding, AI image and video concepts,
+      and content refinement.
+    </p>
+    <div class="buttons">
+      <a class="btn primary" href="#work">View My Work</a>
+      <a class="btn" href="#contact">Contact Me</a>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="container">
+    <h2>Selected Projects</h2>
+    <p class="section-sub">
+      A curated selection of projects showing my work in AI-assisted education, visual storytelling,
+      and creative content development.
+    </p>
+
+    <div class="grid">
+      <article class="card">
+        <span class="pill">Educational Content</span>
+        <h3>Pip’s Fun Activity Book</h3>
+        <p>
+          An illustrated activity book for children aged 6–10, featuring seek-and-find, counting,
+          mazes, patterns, coloring, matching, tracing, shape recognition, and word puzzles.
+        </p>
+        <p><strong>My role:</strong> Concept planning, page layout, activity design, visual ideation, and content refinement.</p>
+      </article>
+
+      <article class="card">
+        <span class="pill">AI Video Concept</span>
+        <h3>From Student to AI Creator</h3>
+        <p>
+          A cinematic promotional-video concept built using structured storyboarding, scene-by-scene
+          prompts, character consistency, and an image-to-video workflow.
+        </p>
+        <p><strong>My role:</strong> Story development, prompt design, visual planning, and iterative output refinement.</p>
+      </article>
+
+      <article class="card">
+        <span class="pill">In Progress</span>
+        <h3>Mystery Activity Book Concept</h3>
+        <p>
+          A suspense-led activity-book concept with puzzle activities, recurring characters, varied
+          scenes, and print-oriented page layouts.
+        </p>
+        <p><strong>My role:</strong> Narrative planning, character continuity, activity design, and visual concept development.</p>
+      </article>
+
+      <article class="card">
+        <span class="pill">Learning & Development</span>
+        <h3>AI Learning Framework</h3>
+        <p>
+          A proposed AI-enabled student learning and development framework covering skill exploration,
+          structured learning paths, practice activities, and project documentation.
+        </p>
+        <p><strong>My role:</strong> Research, framework design, learning-path planning, and documentation.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container">
+    <h2>Skills & Tools</h2>
+    <p class="section-sub">
+      I work across Generative AI, creative production, and learning-content design.
+    </p>
+    <div class="skills">
+      <span class="skill">Prompt Engineering</span>
+      <span class="skill">AI Image Generation</span>
+      <span class="skill">AI Video Concepts</span>
+      <span class="skill">Storyboarding</span>
+      <span class="skill">Visual Storytelling</span>
+      <span class="skill">Character Consistency</span>
+      <span class="skill">Activity-Book Design</span>
+      <span class="skill">Learning-Path Design</span>
+      <span class="skill">Content Research</span>
+      <span class="skill">Output Review & Refinement</span>
+      <span class="skill">Gemini</span>
+      <span class="skill">Google Flow</span>
+      <span class="skill">Google Vids</span>
+      <span class="skill">Canva</span>
+      <span class="skill">Microsoft Office</span>
+      <span class="skill">Python</span>
+      <span class="skill">HTML / CSS / JavaScript</span>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container about-grid">
+    <div>
+      <h2>About Me</h2>
+      <p class="section-sub">
+        I am a B.Tech Information Technology student and AI Learning & Generative AI Intern based in
+        Coimbatore, Tamil Nadu. I enjoy turning ideas into clear creative concepts—whether that is an
+        illustrated children’s activity book, a cinematic AI video, or a structured learning path.
+      </p>
+      <p class="section-sub">
+        My core interest is using Generative AI for content creation, digital marketing, and learning
+        and development. I focus on making AI-generated work clear, consistent, engaging, and useful
+        for the intended audience.
+      </p>
+      <div class="buttons">
+        <a class="btn primary" href="mailto:shobikaravikumar3@gmail.com">Email Me</a>
+        <a class="btn" href="https://linkedin.com/in/shobika-ravikumar-351833184" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+
+    <div class="info-card">
+      <h3>Quick Facts</h3>
+      <p><strong>Role:</strong> Generative AI Content Creator</p>
+      <p><strong>Domain:</strong> AI Content Creation & Learning Design</p>
+      <p><strong>Location:</strong> Coimbatore, Tamil Nadu</p>
+      <p><strong>Education:</strong> B.Tech Information Technology, Expected 2027</p>
+      <p><strong>CGPA:</strong> 8.30 / 10</p>
+      <p><strong>Open to:</strong> Internships and entry-level roles in Generative AI content, digital marketing, and learning & development.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <h2>Let’s Create Something</h2>
+    <p class="section-sub">
+      I am open to AI content creation, visual storytelling, educational content, and learning-design
+      opportunities. Reach out to discuss a project or role.
+    </p>
+    <div class="buttons">
+      <a class="btn primary" href="mailto:shobikaravikumar3@gmail.com">shobikaravikumar3@gmail.com</a>
+      <a class="btn" href="tel:+919025576208">+91 90255 76208</a>
+      <a class="btn" href="https://linkedin.com/in/shobika-ravikumar-351833184" target="_blank" rel="noopener">LinkedIn Profile</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    © 2026 Shobika Ravikumar • Generative AI Content Creator
+  </div>
+</footer>
+
+</body>
+</html>
